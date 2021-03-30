@@ -2,5 +2,7 @@ define
 print.py
 pysplit
 range
+silent
+stdout
 urldecode
 urlencode
