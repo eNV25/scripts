@@ -1,18 +1,18 @@
 
 BINDIR := ~/bin
 
+CPARGS := -i
+
 all: none
 
 none:
 
 install:
 	for command in `cat scripts.list | xargs echo`; do \
-	  ln -s $${PWD}/$${command} $(BINDIR)/$${command} || true ; \
+	  cp $(CPARGS) $${PWD}/$${command} $(BINDIR)/$${command} || true; \
 	done
 
-update:
-	for command in `cat scripts.list | xargs echo`; do \
-	  ln -sf $${PWD}/$${command} $(BINDIR)/$${command} || true ; \
-	done
+install-force:
+	@make install CPARGS=
 
 .PHONY: all none install
