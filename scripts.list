@@ -1,5 +1,7 @@
 args
+clip
 define
+dircolors
 go
 print.py
 pysplit

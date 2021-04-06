@@ -1,0 +1,3 @@
+#!/bin/sh
+case "$TERM" in alacritty*) export TERM=color ;; esac  # GNU dircolors is stupid
+exec /usr/bin/dircolors
