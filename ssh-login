@@ -1,2 +1,2 @@
 #!/bin/sh
-xargs -I'{}'  ssh-add "$HOME/.ssh/{}" < "$HOME/.ssh/id.list"
+exec xargs -I'{}' ssh-add "$HOME/.ssh/{}" < "$HOME/.ssh/id.list"
