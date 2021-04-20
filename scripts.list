@@ -4,6 +4,7 @@ define
 dircolors
 go
 print.py
+print.v1.py
 pysplit
 range
 silent
