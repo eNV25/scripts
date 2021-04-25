@@ -1,4 +1,4 @@
-// copy and paste in the browser's javascript console
+// Go a YouTube Channel and copy and paste in the browser's JavaScript Console.
 
 // scroll to the bottom
 (function () {
@@ -6,6 +6,10 @@
         window.scrollTo(0, document.documentElement.scrollHeight);
     }, 1);
 })();
+
+// fix copy on Chrome
+// https://stackoverflow.com/questions/62212958/devtools-console-copy-is-not-a-function-while-on-youtube
+document.querySelector('#copy').remove();
 
 // copy video titles
 var titles = "";
