@@ -1,15 +1,7 @@
-args
-clip
 define
-dircolors
-go
 print.py
 print.v1.py
 pysplit
 range
-silent
-ssh-login
-ssh-logout
-stdout
 urldecode
 urlencode
